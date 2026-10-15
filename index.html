@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="img_section">
         <div class="logo_section">
@@ -13,11 +15,46 @@
         </div>
     </div>
     <div class="container">
+        <span>
+            This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams.
+        </span>
+        <span style="display: block;">
+            Sign up <em>now</em> to get started.
+        </span>
+        <p>You <em>know</em> you want to.</p>
         <form>
             <div class="credentials">
-
+                <span>Let's do this!</span>
+                <div class="form-group">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" name="first_name">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name" name="last_name">
+                </div>
+                <div class="form-group">
+                    <label for="mail">EMAIL</label>
+                    <input type="email" id="mail" name="mail">
+                </div>
+                <div class="form-group">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="first_name">PASSWORD</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="conf_pass">CONFIRM PASSWORD</label>
+                    <input type="password" id="conf_pass" name="conf_pass">
+                </div>
             </div>
+            <button type="submit">CREATE ACCOUNT</button>
+            <span>Already have an account? <a href="">Log in</a></span>
         </form>
     </div>
 </body>
+
 </html>
