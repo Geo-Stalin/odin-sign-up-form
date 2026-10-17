@@ -46,6 +46,14 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+@font-face {
+    font-family: 'Norse';
+    src: url('norse_font/Norse-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 .img_section {
     background-image: url("images/pexels-kelsey-a.jpg");
     background-size: cover;
@@ -53,6 +61,9 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     height: 100vh;
     width: 40vw;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 body{
@@ -74,9 +85,16 @@ input{
 }
 
 .logo_section{
-    background-color: black;
+    background-color: rgb(0,0,0,0.6);
     display: flex;
     color: white;
     width: 100%;
     height: 20%;
+    position:absolute;
+    top:100px;
+    font-family: 'Norse';
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    padding:10px;
 }
