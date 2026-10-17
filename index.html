@@ -11,7 +11,8 @@
 <body>
     <div class="img_section">
         <div class="logo_section">
-
+            <img src="images/odin-lined.png">
+            <span>ODIN</span>
         </div>
         <span>
             Photo by 
@@ -32,9 +33,10 @@
         <form>
             <div class="credentials">
                 <span>Let's do this!</span>
+                <section>
                 <div class="form-group">
                     <label for="first_name">FIRST NAME</label>
-                    <input type="text" id="first_name" name="first_name">
+                    <input type="text" id="first_name" name="first_name" required>
                 </div>
                 <div class="form-group">
                     <label for="last_name">LAST NAME</label>
@@ -42,7 +44,7 @@
                 </div>
                 <div class="form-group">
                     <label for="mail">EMAIL</label>
-                    <input type="email" id="mail" name="mail">
+                    <input type="email" id="mail" name="mail" required>
                 </div>
                 <div class="form-group">
                     <label for="phone">PHONE NUMBER</label>
@@ -50,15 +52,16 @@
                 </div>
                 <div class="form-group">
                     <label for="first_name">PASSWORD</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" required>
                 </div>
                 <div class="form-group">
                     <label for="conf_pass">CONFIRM PASSWORD</label>
-                    <input type="password" id="conf_pass" name="conf_pass">
+                    <input type="password" id="conf_pass" name="conf_pass" required>
                 </div>
+                </section>
             </div>
             <button type="submit">CREATE ACCOUNT</button>
-            <span>Already have an account? <a href="">Log in</a></span>
+            <span><br>Already have an account? <a href="">Log in</a></span>
         </form>
     </div>
 </body>
