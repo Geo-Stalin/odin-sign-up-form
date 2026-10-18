@@ -46,6 +46,17 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+button {
+    appearance: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+    font: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
+
 @font-face {
     font-family: 'Norse';
     src: url('norse_font/Norse-Bold.woff2') format('woff2');
@@ -117,7 +128,7 @@ button + span>p{
     background-color: #ffffff;
     margin-top: 56px;
     margin-bottom: 32px;
-    height: 40vh;
+    height: 41vh;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
@@ -145,7 +156,9 @@ input{
     justify-content: center;
     padding:10px;
 }
-
+.logo_section span{
+  align-self: center;
+}
 a:link{
     color:inherit;
 }
@@ -161,6 +174,20 @@ button{
   color: white;
   border-radius: 7px;
   padding: 10px 20px;
+  width:236px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 34px;
+}
+
+button + p{
+  font-size: 18px;
+}
+.lower a{
+  color: #C65A4B;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .upper, .credentials , .lower{
