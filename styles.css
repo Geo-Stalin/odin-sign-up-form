@@ -107,10 +107,18 @@ button + span>p{
   margin-bottom: 10px;
 }
 
+.container{
+  background-color: #f9fafb;;
+}
+
 .credentials{
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
+    background-color: #ffffff;
+    margin-top: 56px;
+    margin-bottom: 32px;
+    height: 40vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 
