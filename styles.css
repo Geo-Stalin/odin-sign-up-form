@@ -18,7 +18,7 @@
 }
 
 body {
-  line-height: 1.5;
+  /* line-height: 1.5; */
   -webkit-font-smoothing: antialiased;
 }
 
@@ -53,6 +53,22 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto_font/Roboto-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto_font/Roboto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 .img_section {
     background-image: url("images/pexels-kelsey-a.jpg");
@@ -60,10 +76,11 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    width: 40vw;
+    width: 37vw;
     position: relative;
     display: flex;
     flex-direction: column-reverse;
+    flex-shrink: 0;
     align-items: center;
     color:white;
     padding: 5px;
@@ -71,12 +88,31 @@ h1, h2, h3, h4, h5, h6 {
 
 body{
     display: flex;
+    font-family: Roboto, Arial, sans-serif;
+    margin:0px;
+}
+
+.container span{
+  font-weight: 600;
+  font-size: 24px;
+}
+
+button + span>p{
+  font-weight: normal;
+}
+
+#special_span{
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .credentials{
     display: flex;
     flex-direction: column;
+    background-color: antiquewhite;
 }
+
 
 section{
     display: flex;
@@ -103,11 +139,27 @@ input{
 }
 
 a:link{
-    color:white;
+    color:inherit;
 }
 a:visited,
 a:hover,
 a:active {
     color: inherit;
     text-decoration: none;
+}
+
+button{
+  background-color: #C65A4B;
+  color: white;
+  border-radius: 7px;
+  padding: 10px 20px;
+}
+
+.upper, .credentials , .lower{
+  padding-left: 48px;
+  padding-right: 184px;
+}
+
+.upper{
+  padding-top: 48px;
 }
