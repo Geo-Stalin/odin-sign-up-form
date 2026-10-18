@@ -3,7 +3,9 @@
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -22,179 +24,246 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
 button {
-    appearance: none;
-    border: none;
-    background: none;
-    box-shadow: none;
-    font: inherit;
-    color: inherit;
-    padding: 0;
-    margin: 0;
+  appearance: none;
+  border: none;
+  background: none;
+  box-shadow: none;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  appearance: none;
+  font: inherit;
+  color: inherit;
+  background: white;
+  border: 1px solid #888;
+  border-radius: 4px;
+  padding: 8px;
+  outline: none;
 }
 
 @font-face {
-    font-family: 'Norse';
-    src: url('norse_font/Norse-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('roboto_font/Roboto-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Norse';
+  src: url('norse_font/Norse-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('roboto_font/Roboto-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Roboto';
+  src: url('roboto_font/Roboto-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto_font/Roboto-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 
 .img_section {
-    background-image: url("images/pexels-kelsey-a.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    width: 37vw;
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-shrink: 0;
-    align-items: center;
-    color:white;
-    padding: 5px;
+  background-image: url("images/pexels-kelsey-a.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 37vw;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-shrink: 0;
+  align-items: center;
+  color: white;
+  padding: 5px;
 }
 
-body{
-    display: flex;
-    font-family: Roboto, Arial, sans-serif;
-    margin:0px;
+body {
+  display: flex;
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0px;
 }
 
-.container span{
+.container span {
   font-weight: 600;
   font-size: 24px;
 }
 
-button + span>p{
+button+span>p {
   font-weight: normal;
 }
 
-#special_span{
+#special_span {
   display: block;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.container{
-  background-color: #f9fafb;;
+.container {
+  background-color: #f9fafb;
+  ;
 }
 
-.credentials{
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    margin-top: 56px;
-    margin-bottom: 32px;
-    height: 41vh;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+.credentials {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin-top: 56px;
+  margin-bottom: 32px;
+  height: 41vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  padding-top: 20px;
 }
 
 
-section{
-    display: flex;
-    flex-wrap: wrap;
+section {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 70px;
 }
 
-input{
-    display: block;
+input {
+  display: block;
 }
 
-.logo_section{
-    background-color: rgb(0,0,0,0.6);
-    display: flex;
-    color: white;
-    width: 100%;
-    height: 20%;
-    position:absolute;
-    top:100px;
-    font-family: 'Norse';
-    font-size: 90px;
-    display: flex;
-    justify-content: center;
-    padding:10px;
+.logo_section {
+  background-color: rgb(0, 0, 0, 0.6);
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: 100px;
+  font-family: 'Norse';
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
-.logo_section span{
+
+.logo_section span {
   align-self: center;
 }
-a:link{
-    color:inherit;
+
+a:link {
+  color: inherit;
 }
+
 a:visited,
 a:hover,
 a:active {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
-button{
+button {
   background-color: #C65A4B;
   color: white;
   border-radius: 7px;
   padding: 10px 20px;
-  width:236px;
+  width: 236px;
   height: 50px;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 34px;
 }
 
-button + p{
+button+p {
   font-size: 18px;
 }
-.lower a{
+
+.lower a {
   color: #C65A4B;
   font-weight: 600;
   text-decoration: none;
 }
 
-.upper, .credentials , .lower{
+.upper,
+.credentials,
+.lower {
   padding-left: 48px;
   padding-right: 184px;
 }
 
-.upper{
+.upper {
   padding-top: 48px;
+}
+
+label {
+  font-size: small;
+  letter-spacing: 2px;
+  color: #333333;
+}
+
+input {
+  box-sizing: border-box;
+  width: 260px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #E5E7EB;
+
+}
+
+input:focus{
+  border: 1px solid blue;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+:user-invalid{
+  border: 1px solid red;
 }
